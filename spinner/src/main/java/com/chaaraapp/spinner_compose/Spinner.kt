@@ -1,4 +1,4 @@
-package com.doubleclick.spinner
+package com.chaaraapp.`spinner-compose`
 
 import android.util.Log
 import androidx.compose.animation.core.animateFloatAsState
