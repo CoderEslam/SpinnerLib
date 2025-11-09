@@ -1,4 +1,4 @@
-package com.chaaraapp.`spinner-compose`
+package io.github.codereslam.spinner
 
 import android.util.Log
 import androidx.compose.animation.core.animateFloatAsState
@@ -13,7 +13,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.doubleclick.spinner.theme.GrayLight
+import io.github.codereslam.spinner.theme.GrayLight
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
@@ -37,9 +37,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
-import com.doubleclick.spinner.theme.Black
-import com.doubleclick.spinner.theme.BlueLight
-import com.doubleclick.spinner.theme.BlueLightBackground
+import io.github.codereslam.spinner.theme.Black
+import io.github.codereslam.spinner.theme.BlueLight
+import io.github.codereslam.spinner.theme.BlueLightBackground
 
 
 @Composable
@@ -55,7 +55,7 @@ fun <T> Spinner(
 ) {
     var expanded by remember { mutableStateOf(false) }
     val rotationAngle by animateFloatAsState(
-        targetValue = if (expanded) 0f else 180f,
+        targetValue = if (expanded) 90f else -90f,
         animationSpec = tween(durationMillis = 300) // Adjust duration as needed
     )
     LaunchedEffect(selectedItem) {

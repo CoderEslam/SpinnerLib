@@ -1,4 +1,4 @@
-package com.doubleclick.spinner.theme
+package io.github.codereslam.spinner.theme
 
 import androidx.compose.ui.graphics.Color
 
